@@ -11,7 +11,7 @@ module.exports = {
        "ref"  : "origin/main",
        "repo" : "git@github.com:csrfls/service-api.git",
        "path" : "/var/www/service-api",
-       "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js --env production",
+       "post-deploy": "npm install && npm run build && npx pm2 startOrRestart ecosystem.config.js --env production",
     }
   }
 };
